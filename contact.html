@@ -32,28 +32,29 @@
          <form>
 
             <label >Name</label>
-            <input type="text">
+            <input type="text" id="name" required>
 
             <label >Email</label>
-            <input type="text">
+            <input type="text" id="email" required>
 
             <label >Phone Number</label>
-            <input type="text">
+            <input type="number" id="phone" required>
 
             <label >Subject</label>
-            <select name="test">
-               <option value=""></option>
-               <option value=""></option>
-               <option value=""></option>
+            <select  id="subject" required>
+               <option value="">-</option>
+               <option value="front end">front end</option>
+               <option value="back end">back end</option>
+               <option value="full stack">fullstack</option>
             </select>
 
             <label >Your Message</label>
-            <textarea>
+            <textarea id="message" required>
 
             </textarea>
 
             <div class="btn-submit">
-               <button>Submit</button>
+               <input type="submit" onclick="submitData()" value="Sumbit"/>
             </div>
 
          </form>
@@ -61,5 +62,7 @@
       <!-- contact section -->
    </main>
 
+
+   <script src="/js/contact.js"></script>
 </body>
 </html>
