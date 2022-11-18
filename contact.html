@@ -29,37 +29,50 @@
       <!-- contact section -->
       <div class="contact">
          <h1>GET IN TOUCH</h1>
-         <form>
+
+
+         <form >
 
             <label >Name</label>
-            <input type="text" id="name" required>
+            <input class="input-name" oninput="textInput()" type="text" id="name" >
+            <p class="text-invalid name">please input your name</p>
 
             <label >Email</label>
-            <input type="text" id="email" required>
+            <input class="input-email" oninput="emailInput()" type="text" id="email" >
+            <p class="text-invalid email">please input your name</p>
+
 
             <label >Phone Number</label>
-            <input type="number" id="phone" required>
+            <input class="input-phone" oninput="phoneInput()" type="number" id="phone" >
+            <p class="text-invalid phone">please input your name</p>
+
 
             <label >Subject</label>
-            <select  id="subject" required>
+            <select class="input-subject" oninput="subjectInput()" id="subject">
                <option value="">-</option>
                <option value="front end">front end</option>
                <option value="back end">back end</option>
                <option value="full stack">fullstack</option>
             </select>
+            <p class="text-invalid subject">please input your name</p>
+
 
             <label >Your Message</label>
-            <textarea id="message" required>
+            <textarea class="input-message" oninput="messageInput()" id="message" ></textarea>
+            <p class="text-invalid message">please input your name</p>
 
-            </textarea>
 
             <div class="btn-submit">
-               <input type="submit" onclick="submitData()" value="Sumbit"/>
+               <button type="button" onclick="submitData()">Submit</button>
             </div>
 
          </form>
+
+
       </div>
       <!-- contact section -->
+
+      <p class="test"></p>
    </main>
 
 

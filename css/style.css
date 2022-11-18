@@ -188,10 +188,21 @@ nav ul .nav-menu li a{
    padding: 12px 16px;
    border: none;
    border-radius: 6px;
-   margin-bottom: 14px;
 }
 .contact form input:focus{
-   outline: 2px solid orangered;
+   outline: 2px solid #2563eb;
+}
+.invalid {
+   outline: 2px solid #e11d48 !important;
+}
+.text-invalid{
+   display: none;
+   font-size: 14px;
+   margin-bottom: 14px;
+   color: red;
+}
+.hidden{
+   display: block !important;
 }
 .contact form label{
    margin-bottom: 6px;
@@ -204,16 +215,17 @@ nav ul .nav-menu li a{
    user-select: none;
 }
 .contact form select:focus{
-   outline: 2px solid orangered;
+   outline: 2px solid #2563eb;
 }
 .contact form textarea{
+   padding: 14px;
    border: none;
    height: 170px;
    border-radius: 6px;
    margin-bottom: 14px;
 }
 .contact form textarea:focus{
-   outline: 2px solid orangered;
+   outline: 2px solid #2563eb;
 }
 .contact form .btn-submit{
    width: 100%;
@@ -229,5 +241,6 @@ nav ul .nav-menu li a{
    background-color: #0f172a;
    color: #FFF;
    font-size: 14px;
+   cursor: pointer;
 }
 /* contact  */

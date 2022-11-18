@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<style>
+   main{
+      width: 768px;
+      margin: auto;
+   }
+   form{
+      display: flex;
+      flex-direction: column;
+   }
+   input{
+      margin-bottom: 20px;
+   }
+</style>
+<body>
+   
+   <main>
+
+      <h1>Post Blog</h1>
+
+      <form onsubmit="addData(event)">
+
+         <label  for="">title</label>
+         <input id="input-title" type="text">
+
+         <label for="">content</label>
+         <textarea id="input-content"></textarea>
+
+         <label for="">upload Image</label>
+         <input id="input-image" type="file">
+
+         <input value="submit" type="submit">
+
+      </form>
+
+   </main>
+
+   <div id="contents">
+      
+   </div>
+
+   <script src="/js/blog.js"></script>
+</body>
+</html>
